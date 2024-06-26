@@ -4,7 +4,7 @@ This is a facial recognition authentication application developed using React an
 
 ## Demo
 
-🔵 You can find a live demo of the application [here](facerecog.enhanceme.in).
+🔵 You can find a live demo of the application [here](http://facerecog.enhanceme.in).
 
 ## Screenshots
 
