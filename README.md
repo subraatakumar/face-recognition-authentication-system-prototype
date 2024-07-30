@@ -4,7 +4,7 @@ This is a facial recognition authentication application developed using React an
 
 ## Demo
 
-🔵 You can find a live demo of the application [here](http://facerecog.enhanceme.in).
+🔵 You can find a live demo of the application [here](https://subraatakumar.github.io/face-recognition-authentication-system-prototype/).
 
 ## Screenshots
 
@@ -24,13 +24,13 @@ This is a facial recognition authentication application developed using React an
 1. Clone the repository:
 
 ```bash
-   git clone https://github.com/subraatakumar/Face-Recognition.git
+   git clone git@github.com:subraatakumar/face-recognition-authentication-system-prototype.git
 ```
 
 2. Navigate to the project directory:
 
 ```bash
-  cd ./face-recognition
+  cd ./face-recognition-authentication-system-prototype
 ```
 
 3. Install the dependencies:
@@ -46,6 +46,10 @@ This is a facial recognition authentication application developed using React an
 ```
 
 The application will be running at http://127.0.0.1:5173/.
+
+```bash
+  npm run deployee
+```
 
 ## Contributing
 

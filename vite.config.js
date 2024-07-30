@@ -5,12 +5,11 @@ import react from "@vitejs/plugin-react";
 export default defineConfig(({ command }) => {
   const config = {
     plugins: [react()],
-    base: "/",
+    base: "face-recognition-authentication-system-prototype",
+    build: {
+      outDir: "dist",
+    },
   };
-
-  // if (command !== "serve") {
-  //   config.base = "/react-face-auth/";
-  // }
 
   return config;
 });

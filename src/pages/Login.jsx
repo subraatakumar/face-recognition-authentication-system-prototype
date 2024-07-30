@@ -27,8 +27,10 @@ function Login() {
   }
 
   const loadModels = async () => {
-    // const uri = import.meta.env.DEV ? "/models" : "/react-face-auth/models";
-    const uri = "/models";
+    const uri = import.meta.env.DEV
+      ? "/models"
+      : "/face-recognition-authentication-system-prototype/models";
+    //const uri = "/models";
 
     await faceapi.nets.ssdMobilenetv1.loadFromUri(uri);
     await faceapi.nets.faceLandmark68Net.loadFromUri(uri);
@@ -137,10 +139,10 @@ function Login() {
       const imgPath =
         tempAccount?.type === "CUSTOM"
           ? tempAccount.picture
-          : // : import.meta.env.DEV
-            // ? `/temp-accounts/${tempAccount.picture}`
-            // : `/react-face-auth/temp-accounts/${tempAccount.picture}`;
-            `/temp-accounts/${tempAccount.picture}`;
+          : import.meta.env.DEV
+          ? `/temp-accounts/${tempAccount.picture}`
+          : `/face-recognition-authentication-system-prototype/temp-accounts/${tempAccount.picture}`;
+      // `/temp-accounts/${tempAccount.picture}`;
 
       img = await faceapi.fetchImage(imgPath);
     } catch {
