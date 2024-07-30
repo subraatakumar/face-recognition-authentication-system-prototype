@@ -13,12 +13,37 @@ function Home() {
             React Face Auth
           </h1>
           <p className="mt-8 text-md text-gray-600 max-w-3xl mx-4 md:mx-16 lg:mx-auto">
-            The Facial Recognition-Based Authentication Application is a
+            The Face Recognition-Based Authentication Application is a
             cutting-edge web application developed using React and face-api.js.
             The main objective of the application is to offer a reliable and
-            efficient authentication system by analyzing and verifying the
-            user's facial features.
+            efficient authentication system by recognising user's face.
           </p>
+          <br />
+          <div class="mx-auto relative flex flex-col text-gray-700 bg-white shadow-md w-96 rounded-xl bg-clip-border">
+            <nav class="flex min-w-[240px] flex-col gap-1 p-2 font-sans text-base font-normal text-blue-gray-700">
+              <div className="p-4 border-b border-gray-200 text-xl font-bold">
+                <h2>Use Cases</h2>
+              </div>
+              <div
+                role="button"
+                class="flex items-center w-full p-3 leading-tight transition-all rounded-lg outline-none text-start hover:bg-blue-gray-50 hover:bg-opacity-80 hover:text-blue-gray-900 focus:bg-blue-gray-50 focus:bg-opacity-80 focus:text-blue-gray-900 active:bg-blue-gray-50 active:bg-opacity-80 active:text-blue-gray-900"
+              >
+                Criminal identification at any public place using CCTV.
+              </div>
+              <div
+                role="button"
+                class="flex items-center w-full p-3 leading-tight transition-all rounded-lg outline-none text-start hover:bg-blue-gray-50 hover:bg-opacity-80 hover:text-blue-gray-900 focus:bg-blue-gray-50 focus:bg-opacity-80 focus:text-blue-gray-900 active:bg-blue-gray-50 active:bg-opacity-80 active:text-blue-gray-900"
+              >
+                Alaram on unauthorised person's entry in society.
+              </div>
+              <div
+                role="button"
+                class="flex items-center w-full p-3 leading-tight transition-all rounded-lg outline-none text-start hover:bg-blue-gray-50 hover:bg-opacity-80 hover:text-blue-gray-900 focus:bg-blue-gray-50 focus:bg-opacity-80 focus:text-blue-gray-900 active:bg-blue-gray-50 active:bg-opacity-80 active:text-blue-gray-900"
+              >
+                Staff attendance in organisation.
+              </div>
+            </nav>
+          </div>
           <Link
             to={"/user-select"}
             className="flex gap-2 mt-12 w-fit mx-auto cursor-pointer z-10 py-3 px-6 rounded-full bg-gradient-to-r from-indigo-300 to-indigo-500"
