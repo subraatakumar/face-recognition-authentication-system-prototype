@@ -8,6 +8,34 @@ This is a facial recognition authentication application developed using React an
 
 ## Screenshots
 
+<!-- Container for the images -->
+<div style="display: flex; flex-wrap: wrap; gap: 16px;">
+
+  <!-- Image 1 -->
+  <div style="flex: 1 1 calc(33.333% - 16px); box-sizing: border-box;">
+    <img src="./readme_images/home_page.png" alt="Image 1" style="width: 100%; height: auto; border-radius: 8px;">
+  </div>
+
+  <!-- Image 2 -->
+  <div style="flex: 1 1 calc(33.333% - 16px); box-sizing: border-box;">
+    <img src="./readme_images/add_user.png" alt="Image 2" style="width: 100%; height: auto; border-radius: 8px;">
+  </div>
+
+  <!-- Image 3 -->
+  <div style="flex: 1 1 calc(33.333% - 16px); box-sizing: border-box;">
+    <img src="./readme_images/recog_face.png" alt="Image 3" style="width: 100%; height: auto; border-radius: 8px;">
+  </div>
+    <!-- Image 4 -->
+  <div style="flex: 1 1 calc(33.333% - 16px); box-sizing: border-box;">
+    <img src="./readme_images/scanning_face.png" alt="Image 3" style="width: 100%; height: auto; border-radius: 8px;">
+  </div>
+    <!-- Image 3 -->
+  <div style="flex: 1 1 calc(33.333% - 16px); box-sizing: border-box;">
+    <img src="./readme_images/final_shot.png" alt="Image 3" style="width: 100%; height: auto; border-radius: 8px;">
+  </div>
+
+</div>
+
 ## Features
 
 - Facial recognition authentication with demo and custom user faces
