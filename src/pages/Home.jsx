@@ -10,10 +10,10 @@ function Home() {
             Welcome To
           </h1>
           <h1 className="block text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl bg-clip-text text-transparent bg-gradient-to-r from-indigo-500 to-indigo-900">
-            React Face Auth
+            FaceAuth Login System With Liveness-Check 
           </h1>
           <p className="mt-8 text-md text-gray-600 max-w-3xl mx-4 md:mx-16 lg:mx-auto">
-            The Face Recognition-Based Authentication Application is a
+            The FaceAuth Login System With Liveness-Check Application is a
             cutting-edge web application developed using React and face-api.js.
             The main objective of the application is to offer a reliable and
             efficient authentication system by recognising user's face.
@@ -24,6 +24,12 @@ function Home() {
               <div className="p-4 border-b border-gray-200 text-xl font-bold">
                 <h2>Use Cases</h2>
               </div>
+              <div
+                role="button"
+                class="flex items-center w-full p-3 leading-tight transition-all rounded-lg outline-none text-start hover:bg-blue-gray-50 hover:bg-opacity-80 hover:text-blue-gray-900 focus:bg-blue-gray-50 focus:bg-opacity-80 focus:text-blue-gray-900 active:bg-blue-gray-50 active:bg-opacity-80 active:text-blue-gray-900"
+              >
+                Corporate Attendance Management.
+              </div>              
               <div
                 role="button"
                 class="flex items-center w-full p-3 leading-tight transition-all rounded-lg outline-none text-start hover:bg-blue-gray-50 hover:bg-opacity-80 hover:text-blue-gray-900 focus:bg-blue-gray-50 focus:bg-opacity-80 focus:text-blue-gray-900 active:bg-blue-gray-50 active:bg-opacity-80 active:text-blue-gray-900"
@@ -40,7 +46,7 @@ function Home() {
                 role="button"
                 class="flex items-center w-full p-3 leading-tight transition-all rounded-lg outline-none text-start hover:bg-blue-gray-50 hover:bg-opacity-80 hover:text-blue-gray-900 focus:bg-blue-gray-50 focus:bg-opacity-80 focus:text-blue-gray-900 active:bg-blue-gray-50 active:bg-opacity-80 active:text-blue-gray-900"
               >
-                Staff attendance in organisation.
+                Exam Proctoring.
               </div>
             </nav>
           </div>
