@@ -84,6 +84,7 @@ function Login() {
   const scanFace = async () => {
     faceapi.matchDimensions(canvasRef.current, videoRef.current);
     const faceApiInterval = setInterval(async () => {
+      // Detect all faces in the live video stream
       const detections = await faceapi
         .detectAllFaces(videoRef.current)
         .withFaceLandmarks()
@@ -93,12 +94,15 @@ function Login() {
         height: videoHeight,
       });
 
+      // Create a face matcher to compare with stored descriptors
       const faceMatcher = new faceapi.FaceMatcher(labeledFaceDescriptors);
 
+      // Compare live face with stored descriptors
       const results = resizedDetections.map((d) =>
         faceMatcher.findBestMatch(d.descriptor)
       );
 
+      // Check for blink (liveness detection)
       const isLive = await detectBlink(resizedDetections);
       if (isLive && loginResult) {
         setCounter((prev) => prev + 1);
@@ -114,6 +118,7 @@ function Login() {
       faceapi.draw.drawDetections(canvasRef.current, resizedDetections);
       faceapi.draw.drawFaceLandmarks(canvasRef.current, resizedDetections);
 
+       // Check if recognized user matches
       if (results.length > 0 && tempAccount.id === results[0].label) {
         setLoginResult("SUCCESS");
       } else {

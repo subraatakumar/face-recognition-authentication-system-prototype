@@ -92,7 +92,7 @@ A printed photo cannot blink. A video could theoretically be replayed, but rando
 | Model | Size | Purpose |
 |-------|------|---------|
 | **Tiny Face Detector** | ~190 KB | Fast face detection on live video streams. Optimized for real-time performance on mobile. |
-| **SSD MobileNet V1** | ~80 MB | High-accuracy alternative for precision-critical scenarios. |
+| **SSD MobileNet V1** | ~5.4 MB | High-accuracy detector in this repo (4.0 MB + 1.4 MB shards, plus manifest). |
 | **Face Landmark 68 Net** | ~350 KB | Detects 68 key points on the face (eyes, nose, mouth, jaw). Essential for liveness detection. |
 | **Face Recognition Net** | ~350 KB | Generates the 128-number face descriptor for identity matching. |
 | **Face Expression Net** | ~600 KB | Detects emotions (happiness, sadness, anger, surprise). Useful for smile-based challenges. |
